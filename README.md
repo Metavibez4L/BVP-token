@@ -34,4 +34,21 @@ This repository contains the on-chain Solana program for the **BVP Cryptosystem*
 ---
 
 ## 📦 Project Structure
+programs/bvp_token/ ├── lib.rs # Main entry and module loader ├── token.rs # Token logic ├── staking.rs # Reward and experience staking logic ├── multisig.rs # Multi-sig fund management ├── governance.rs # Proposal and voting system └── tiers.rs # Tier classification system
+
+tests/ └── bvp_token.ts # Mocha/Chai-based integration test
+
+Anchor.toml # Anchor configuration Cargo.toml # Rust crate config tsconfig.json # TypeScript test setup package.json # Test runner config (Mocha + ts-node)
+
+
+---
+
+## ⚙️ Development Setup
+
+### 📥 Clone and Install
+
+```bash
+git clone https://github.com/Metavibez4L/BVP-token.git
+cd BVP-token
+npm install
 
