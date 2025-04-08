@@ -1,0 +1,9 @@
+[programs.devnet]
+bvp_token = "9erFjuSDr2NwCUGmd1H1epfhMcy7aEF7g5xtTn71Eh3m"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[workspace]
+members = ["programs/bvp_token"]

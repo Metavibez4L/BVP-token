@@ -1,0 +1,12 @@
+/app/target/sbf-solana-solana/release/deps/libanchor_spl-3f1e93f644773ec6.rmeta: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/associated_token.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/mint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token_2022.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token_interface.rs
+
+/app/target/sbf-solana-solana/release/deps/libanchor_spl-3f1e93f644773ec6.rlib: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/associated_token.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/mint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token_2022.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token_interface.rs
+
+/app/target/sbf-solana-solana/release/deps/anchor_spl-3f1e93f644773ec6.d: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/associated_token.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/mint.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token_2022.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token_interface.rs
+
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/associated_token.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/mint.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token_2022.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/anchor-spl-0.29.0/src/token_interface.rs:

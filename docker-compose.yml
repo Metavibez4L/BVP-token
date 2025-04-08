@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  bvp-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bvp-dev
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "8899:8899"   # Solana localnet (if used)
+      - "8000:8000"   # Optional: for frontends or testing servers
+    command: bash
+    tty: true

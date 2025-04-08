@@ -1,0 +1,14 @@
+{
+  "name": "bvp_token",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/**/*.ts"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.1",
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7"
+  }
+}
