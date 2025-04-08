@@ -2,3 +2,4 @@
 members = [
   "programs/bvp_token"
 ]
+resolver = "2"

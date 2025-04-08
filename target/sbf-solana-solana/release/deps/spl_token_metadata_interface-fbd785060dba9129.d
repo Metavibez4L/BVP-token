@@ -1,0 +1,10 @@
+/app/target/sbf-solana-solana/release/deps/spl_token_metadata_interface-fbd785060dba9129.so: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/state.rs
+
+/app/target/sbf-solana-solana/release/deps/libspl_token_metadata_interface-fbd785060dba9129.rlib: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/state.rs
+
+/app/target/sbf-solana-solana/release/deps/spl_token_metadata_interface-fbd785060dba9129.d: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/error.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/instruction.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/state.rs
+
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/error.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/instruction.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spl-token-metadata-interface-0.2.0/src/state.rs:

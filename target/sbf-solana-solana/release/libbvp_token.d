@@ -1,0 +1,1 @@
+/app/target/sbf-solana-solana/release/libbvp_token.rlib: /app/programs/bvp_token/src/governance.rs /app/programs/bvp_token/src/lib.rs /app/programs/bvp_token/src/multisig.rs /app/programs/bvp_token/src/staking.rs /app/programs/bvp_token/src/tiers.rs /app/programs/bvp_token/src/token.rs
