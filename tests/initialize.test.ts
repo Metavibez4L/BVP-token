@@ -10,6 +10,7 @@ describe("bvp_token", () => {
   const program = anchor.workspace.BvpToken as Program<BvpToken>;
 
   it("Initializes the token!", async () => {
+    console.log("Program ID:", program.programId.toBase58());
     assert.ok(program.programId);
   });
 });

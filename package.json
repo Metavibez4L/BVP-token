@@ -2,14 +2,16 @@
   "name": "bvp_token",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha -r ts-node/register tests/**/*.ts"
+    "test": "ANCHOR_PROVIDER_URL=https://api.devnet.solana.com ANCHOR_WALLET=/root/.config/solana/id.json mocha -r ts-node/register tests/**/*.ts"
   },
   "devDependencies": {
     "@coral-xyz/anchor": "^0.29.0",
+    "@types/chai": "^5.2.1",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^22.14.0",
-    "chai": "^4.3.7",
-    "mocha": "^10.2.0",
-    "ts-node": "^10.9.1",
+    "chai": "^4.5.0",
+    "mocha": "^10.8.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }
