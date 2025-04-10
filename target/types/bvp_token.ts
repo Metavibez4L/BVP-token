@@ -1,265 +1,29 @@
 export type BvpToken = {
-  "version": "0.1.0",
-  "name": "bvp_token",
-  "instructions": [
+  version: "0.1.0";
+  name: "bvp_token";
+  instructions: [
     {
-      "name": "initialize",
-      "accounts": [
-        {
-          "name": "payer",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "mint",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "tokenProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "totalSupply",
-          "type": "u64"
-        }
-      ]
+      name: "initialize";
+      accounts: [
+        { name: "tokenMint"; isMut: true; isSigner: false },
+        { name: "user"; isMut: true; isSigner: true },
+        { name: "systemProgram"; isMut: false; isSigner: false }
+      ];
+      args: [
+        { name: "totalSupply"; type: "u64" }
+      ];
     },
     {
-      "name": "stakeTokens",
-      "accounts": [
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "tokenProgram",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "amount",
-          "type": "u64"
-        },
-        {
-          "name": "duration",
-          "type": "u64"
-        }
-      ]
+      name: "stakeTokens";
+      accounts: [
+        { name: "tokenMint"; isMut: false; isSigner: false },
+        { name: "user"; isMut: true; isSigner: true },
+        { name: "tokenProgram"; isMut: false; isSigner: false }
+      ];
+      args: [
+        { name: "amount"; type: "u64" },
+        { name: "duration"; type: "u64" }
+      ];
     }
-  ],
-  "accounts": [
-    {
-      "name": "proposal",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "id",
-            "type": "u64"
-          },
-          {
-            "name": "approvals",
-            "type": "u8"
-          },
-          {
-            "name": "rejections",
-            "type": "u8"
-          },
-          {
-            "name": "threshold",
-            "type": "u8"
-          },
-          {
-            "name": "executed",
-            "type": "bool"
-          }
-        ]
-      }
-    }
-  ],
-  "types": [
-    {
-      "name": "Tier",
-      "type": {
-        "kind": "enum",
-        "variants": [
-          {
-            "name": "None"
-          },
-          {
-            "name": "Bronze"
-          },
-          {
-            "name": "Silver"
-          },
-          {
-            "name": "Gold"
-          },
-          {
-            "name": "Platinum"
-          },
-          {
-            "name": "Diamond"
-          }
-        ]
-      }
-    }
-  ],
-  "errors": [
-    {
-      "code": 6000,
-      "name": "ProposalAlreadyExecuted",
-      "msg": "This proposal has already been executed."
-    }
-  ]
-};
-
-export const IDL: BvpToken = {
-  "version": "0.1.0",
-  "name": "bvp_token",
-  "instructions": [
-    {
-      "name": "initialize",
-      "accounts": [
-        {
-          "name": "payer",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "mint",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "tokenProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "totalSupply",
-          "type": "u64"
-        }
-      ]
-    },
-    {
-      "name": "stakeTokens",
-      "accounts": [
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "tokenProgram",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "amount",
-          "type": "u64"
-        },
-        {
-          "name": "duration",
-          "type": "u64"
-        }
-      ]
-    }
-  ],
-  "accounts": [
-    {
-      "name": "proposal",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "id",
-            "type": "u64"
-          },
-          {
-            "name": "approvals",
-            "type": "u8"
-          },
-          {
-            "name": "rejections",
-            "type": "u8"
-          },
-          {
-            "name": "threshold",
-            "type": "u8"
-          },
-          {
-            "name": "executed",
-            "type": "bool"
-          }
-        ]
-      }
-    }
-  ],
-  "types": [
-    {
-      "name": "Tier",
-      "type": {
-        "kind": "enum",
-        "variants": [
-          {
-            "name": "None"
-          },
-          {
-            "name": "Bronze"
-          },
-          {
-            "name": "Silver"
-          },
-          {
-            "name": "Gold"
-          },
-          {
-            "name": "Platinum"
-          },
-          {
-            "name": "Diamond"
-          }
-        ]
-      }
-    }
-  ],
-  "errors": [
-    {
-      "code": 6000,
-      "name": "ProposalAlreadyExecuted",
-      "msg": "This proposal has already been executed."
-    }
-  ]
+  ];
 };
