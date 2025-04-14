@@ -1,19 +1,16 @@
 use anchor_lang::prelude::*;
 use anchor_spl::token::{self as spl_token, Mint, Token, TokenAccount};
 
-declare_id!("5rDtfenu18pntzG66DAo18sWs4oc7NqecRdtEcdjtCXu");
-
 pub mod token;
 pub mod staking;
-pub mod multisig;
 pub mod governance;
+pub mod multisig;
 pub mod tiers;
 
 use token::*;
 use staking::*;
-use governance::*;
-use multisig::*;
-use tiers::*;
+
+declare_id!("DGsg8rU5S9EQMYZaZgxJ2zihAX39jSd6ESnfZ5MQePQk");
 
 #[program]
 pub mod bvp_token {

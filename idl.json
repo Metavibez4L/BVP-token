@@ -5,9 +5,11 @@
     {
       "name": "initialize",
       "accounts": [
-        { "name": "tokenMint", "isMut": true, "isSigner": false },
+        { "name": "mint", "isMut": true, "isSigner": true },
         { "name": "user", "isMut": true, "isSigner": true },
-        { "name": "systemProgram", "isMut": false, "isSigner": false }
+        { "name": "systemProgram", "isMut": false, "isSigner": false },
+        { "name": "rent", "isMut": false, "isSigner": false },
+        { "name": "tokenProgram", "isMut": false, "isSigner": false }
       ],
       "args": [
         { "name": "totalSupply", "type": "u64" }
@@ -16,7 +18,6 @@
     {
       "name": "stakeTokens",
       "accounts": [
-        { "name": "tokenMint", "isMut": false, "isSigner": false },
         { "name": "user", "isMut": true, "isSigner": true },
         { "name": "tokenProgram", "isMut": false, "isSigner": false }
       ],
@@ -26,7 +27,10 @@
       ]
     }
   ],
+  "accounts": [],
+  "types": [],
+  "errors": [],
   "metadata": {
-    "address": "5rDtfenu18pntzG66DAo18sWs4oc7NqecRdtEcdjtCXu"
+    "address": "DGsg8rU5S9EQMYZaZgxJ2zihAX39jSd6ESnfZ5MQePQk"
   }
 }

@@ -1,9 +1,12 @@
+[workspace]
+members = ["programs/bvp_token"]
+
 [programs.devnet]
-bvp_token = "3FpX6Erkk2E8bdwrcpE76pR1LsoHuoSPappittGvqfEA"
+bvp_token = "DGsg8rU5S9EQMYZaZgxJ2zihAX39jSd6ESnfZ5MQePQk"
 
 [provider]
 cluster = "https://api.devnet.solana.com"
 wallet = "/root/.config/solana/id.json"
 
 [scripts]
-test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test = "mocha -r ts-node/register tests/**/*.ts"
