@@ -3,33 +3,67 @@
   "name": "bvp_token",
   "instructions": [
     {
-      "name": "initialize",
-      "accounts": [
-        { "name": "mint", "isMut": true, "isSigner": true },
-        { "name": "user", "isMut": true, "isSigner": true },
-        { "name": "systemProgram", "isMut": false, "isSigner": false },
-        { "name": "rent", "isMut": false, "isSigner": false },
-        { "name": "tokenProgram", "isMut": false, "isSigner": false }
-      ],
-      "args": [
-        { "name": "totalSupply", "type": "u64" }
-      ]
-    },
-    {
       "name": "stakeTokens",
       "accounts": [
-        { "name": "user", "isMut": true, "isSigner": true },
-        { "name": "tokenProgram", "isMut": false, "isSigner": false }
+        {
+          "name": "stakeState",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
       ],
       "args": [
-        { "name": "amount", "type": "u64" },
-        { "name": "duration", "type": "u64" }
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "duration",
+          "type": "u64"
+        }
       ]
     }
   ],
-  "accounts": [],
-  "types": [],
-  "errors": [],
+  "accounts": [
+    {
+      "name": "StakeState",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "user",
+            "type": "publicKey"
+          },
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "startTimestamp",
+            "type": "i64"
+          },
+          {
+            "name": "duration",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ],
   "metadata": {
     "address": "DGsg8rU5S9EQMYZaZgxJ2zihAX39jSd6ESnfZ5MQePQk"
   }

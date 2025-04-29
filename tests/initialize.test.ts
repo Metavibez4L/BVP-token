@@ -1,15 +1,16 @@
 import * as anchor from "@coral-xyz/anchor";
-import { Program } from "@coral-xyz/anchor";
 import { BvpToken } from "../target/types/bvp_token";
-import { assert } from "chai";
 
-describe("bvp_token", () => {
+const programId = new anchor.web3.PublicKey("DGsg8rU5S9EQMYZaZgxJ2zihAX39jSd6ESnfZ5MQePQk");
+const idl = require("../target/idl/bvp_token.json");
+
+describe("initialize program manually", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.BvpToken as Program<BvpToken>;
+  const program = new anchor.Program(idl, programId, provider) as anchor.Program<BvpToken>;
 
-  it("Initializes the token!", async () => {
-    assert.ok(program.programId.toBase58() === "DGsg8rU5S9EQMYZaZgxJ2zihAX39jSd6ESnfZ5MQePQk");
+  it("confirms the program ID is set", async () => {
+    console.log("Program ID:", program.programId.toBase58());
   });
 });

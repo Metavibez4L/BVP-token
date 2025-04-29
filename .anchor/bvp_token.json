@@ -1,0 +1,11 @@
+{
+  "program": {
+    "bvp_token": {
+      "programId": "DGsg8rU5S9EQMYZaZgxJ2zihAX39jSd6ESnfZ5MQePQk",
+      "idl": "target/idl/bvp_token.json"
+    }
+  },
+  "metadata": {
+    "address": "DGsg8rU5S9EQMYZaZgxJ2zihAX39jSd6ESnfZ5MQePQk"
+  }
+}
