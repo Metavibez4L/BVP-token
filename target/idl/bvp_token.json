@@ -19,11 +19,6 @@
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false
-        },
-        {
-          "name": "tokenProgram",
-          "isMut": false,
-          "isSigner": false
         }
       ],
       "args": [
@@ -36,6 +31,22 @@
           "type": "u64"
         }
       ]
+    },
+    {
+      "name": "unstakeTokens",
+      "accounts": [
+        {
+          "name": "stakeState",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": false,
+          "isSigner": true
+        }
+      ],
+      "args": []
     }
   ],
   "accounts": [

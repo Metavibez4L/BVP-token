@@ -19,11 +19,6 @@ export type BvpToken = {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false
-        },
-        {
-          "name": "tokenProgram",
-          "isMut": false,
-          "isSigner": false
         }
       ],
       "args": [
@@ -36,6 +31,22 @@ export type BvpToken = {
           "type": "u64"
         }
       ]
+    },
+    {
+      "name": "unstakeTokens",
+      "accounts": [
+        {
+          "name": "stakeState",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": false,
+          "isSigner": true
+        }
+      ],
+      "args": []
     }
   ],
   "accounts": [
@@ -87,11 +98,6 @@ export const IDL: BvpToken = {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false
-        },
-        {
-          "name": "tokenProgram",
-          "isMut": false,
-          "isSigner": false
         }
       ],
       "args": [
@@ -104,6 +110,22 @@ export const IDL: BvpToken = {
           "type": "u64"
         }
       ]
+    },
+    {
+      "name": "unstakeTokens",
+      "accounts": [
+        {
+          "name": "stakeState",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": false,
+          "isSigner": true
+        }
+      ],
+      "args": []
     }
   ],
   "accounts": [
