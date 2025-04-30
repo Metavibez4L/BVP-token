@@ -10,7 +10,6 @@ This repo contains the on-chain program and client tests for **BVP Token**, a st
 
 - 🏗 Modular **Anchor program** architecture
 - 🪙 **SPL token minting** and staking logic
-- 🎯 Tier-based reward system via `tiers` module
 - 🔐 Secure initializer with upgrade authority
 - ⚙️ **Dockerized** dev/test environment for full isolation
 - ✅ Mocha + TypeScript test suite with IDL-bound client
